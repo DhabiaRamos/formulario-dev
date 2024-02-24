@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Form Dev's</title>
+</head>
+
+<body>
+    <header>
+        <p>Form Dev's</p>
+
+        <div id="modos">
+            <button class="btn-modo" id="blueMode">Blue Mode</button>
+            <button class="btn-modo" id="greenMode">Green Mode</button>
+            <button class="btn-modo" id="pinkMode">Pink Mode</button>
+            <button class="btn-click-surprise" id="surprise">Click</button>
+        </div>
+
+    </header>
+
+    <main>
+
+        <img src="./assets/undraw_resume.svg" alt="imagem representando um formulario" id="img-form">
+
+        <form action="">
+
+            <h1>Formúlario Dev's</h1>
+
+            <div id="inform">
+                <label for="nome">Nome</label>
+                <input name="nome" id="nome" type="text" placeholder="Digite seu nome" autocomplete="name">
+
+                <label for="idade">Idade</label>
+                <input name="idade" id="idade" type="number" placeholder="Digite sua idade">
+
+                <label for="dataInicioEstudos">Quando iniciou os estudos?</label>
+                <input type="date" name="data-inicio-estudos" id="dataInicioEstudos">
+
+                <label for="metaProg">Qual sua meta na programação?</label>
+                <input type="text" name="meta-na-programacao" id="metaProg"
+                    placeholder="Ex: Conseguir um emprego na area">
+            </div>
+
+
+            <div id="area-seguir">
+
+                <h2>Qual área você quer seguir?</h2>
+
+                <select name="area-a-seguir" id="areaSeguir">
+
+                    <option value="frontEnd">Front-End</option>
+                    <option value="backEnd">Back-End</option>
+                    <option value="fullStack">Full-Stack</option>
+                    <option value="gameDeveloper">Game Developer</option>
+                    <option value="mobileDeveloper">Mobile Developer</option>
+                    <option value="outraArea">Outra Área</option>
+
+                </select>
+
+            </div>
+
+
+            <div id="tecnologia-estudos">
+
+                <h2>Quais tecnologias você está estudando atualmente?</h2>
+
+                <label for="htmlCss">HTML e CSS</label>
+                <input type="checkbox" name="tecnologia-estudando" id="htmlCss">
+
+                <label for="javascript">JavaScript</label>
+                <input type="checkbox" name="tecnologia-estudando" id="javascript">
+
+                <label for="java">Java</label>
+                <input type="checkbox" name="tecnologia-estudando" id="java">
+
+                <label for="c#">C#</label>
+                <input type="checkbox" name="tecnologia-estudando" id="C#">
+
+                <label for="python">Python</label>
+                <input type="checkbox" name="tecnologia-estudando" id="python">
+
+                <label for="outraTecno">Outra Tecnologia</label>
+                <input type="checkbox" name="tecnologia-estudando" id="outraTecno">
+
+            </div>
+
+            <div id="relato">
+                <h2>Relate seu processo</h2>
+
+                <label for="processo-experiencia">Conte sua experiência de estudos e como está sendo o seu
+                    processo</label>
+
+                <textarea name="relato-processo-experiencia" id="processo-experiencia" cols="30" rows="10"></textarea>
+
+            </div>
+
+            <button type="submit" id="enviarForm">Enviar</button>
+        </form>
+
+    </main>
+
+    <section id="memesProg">
+
+        <img id="memesImg" src="./assets/memes/meme1.png" alt="memes de programação">
+
+        <i id="setaProx" class='bx bx-chevron-right' onclick="passarProx()"></i>
+
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
