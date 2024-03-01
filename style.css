@@ -237,6 +237,10 @@ h2{
         gap: 4px;
     }
 
+    #img-form{
+        max-width: 60%;
+    }
+
     form{
         margin: 30px;
         border: none;
